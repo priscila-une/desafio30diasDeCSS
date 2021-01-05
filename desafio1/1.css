@@ -1,0 +1,52 @@
+
+
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    background-image:linear-gradient(to right, rgba(186, 127, 209, 0.582) , rgb(185, 16, 236));
+}
+
+
+.center{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: rgba(212, 167, 173, 0.637);
+    transform: rotate(-30deg) skew(25deg) scale(0.5);
+    transition: 0.5s;
+    border-radius: 10px;
+
+}
+
+
+.center:hover span:nth-child(4){
+    transform: translate(145px, -145px);
+    opacity: 1;
+    
+    
+}
+.center:hover span:nth-child(3){
+    transform: translate(100px, -100px);
+    opacity: 0.6;
+  
+}
+.center:hover span:nth-child(2){
+    transform: translate(60px, -60px);
+    opacity: 0.4;
+    
+}
+.center:hover span:nth-child(1){
+    transform: translate(20px, -20px);
+    opacity: 0.2;
+}
+
+.center span{
+
+    position: absolute;
+    font-size: 200px;
+    color: rgb(95, 88, 88);
+
+}
