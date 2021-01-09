@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(3, 3, 3);
+    display: flex;
+    justify-content: center;
+
+}
+
+#container{
+    margin-top: 200px;
+    background-color: rgb(248, 103, 6);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+    0%{
+        
+        box-shadow: 0 0 0 0 rgb(224, 132, 46), 0 0 0 0 rgb(228, 93, 31) 
+    }
+    40%{
+        box-shadow: 0 0 0 50px rgba(142, 68, 173, 0), 0 0 0 0 rgb(228, 93, 31); 
+    }
+
+    80%{
+        
+        box-shadow: 0 0 0 50px rgba(142, 68, 173, 0), 0 0 0 0 rgba(142, 68, 173, 0);
+    }
+    100%{
+        
+        box-shadow: 0 0 0 0  rgb(228, 93, 31) , 0 0 0 0 rgba(142, 68, 173, 0); 
+    }
+}
+
+.pulse{
+    margin-top: 35px;
+    margin-left: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+}
+
