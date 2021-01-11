@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.loading-screen{
+    width: 100%;
+    height: 100vh;
+    background-color: cadetblue;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading{
+    width: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    animation: rotate 2s linear infinite;
+    
+}
+
+@keyframes rotate{
+    to{
+        transform: rotate(360deg);
+        
+    }
+}
+
+.loading span{
+    width: 30px;
+    height: 30px;
+    background-color: crimson;
+    margin: 5px;
+}
+
+.loading span:nth-child(1){
+    transform: rotate(10deg)skew(20deg);
+    background-color: rgb(129, 28, 129);
+}
+.loading span:nth-child(2){
+    transform: rotate(-80deg)skew(20deg) ;
+    background-color: rgb(212, 200, 31);
+}
+.loading span:nth-child(3){
+    transform: rotate(-80deg)skew(20deg) ;
+    background-color: rgb(32, 128, 64);
+}
+.loading span:nth-child(4){
+    transform: rotate(190deg)skew(20deg) ;
+}
