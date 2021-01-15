@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(155, 5, 155, 0.877);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+}
+
+.texto{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100px;
+    color:white;
+    
+}
+
+span::before{
+    content: "";
+    animation: alternar 3s infinite;
+}
+
+@keyframes alternar {
+    0%{
+        content: "🎵";
+    }
+    50%{
+        content: "☕";
+    }
+    100%{
+        content: "🎮";
+    }
+}
+
