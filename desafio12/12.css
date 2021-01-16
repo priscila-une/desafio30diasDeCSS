@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #383838;
+    padding-top: 200px;
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+    -webkit-text-stroke: 0.1vw #5a9276;
+    font-size: 120px;
+    text-transform: uppercase;
+    color: #383838;
+    font-family: 'Franklin Gothic Medium';
+    position: relative;
+    
+}
+
+h2::before{
+    content: "#30diasdeCSS";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #5a9276;
+    overflow: hidden;
+    transition: all 0.6s;
+}
+
+h2:hover::before{
+    width: 100%;
+}
