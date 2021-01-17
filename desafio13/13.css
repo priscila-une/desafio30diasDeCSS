@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #222;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bar{
+    width: 10px;
+    height: 60px;
+    background: white;
+    display: inline-block;
+    animation: loading 1.5s ease-in-out infinite;
+    transform-origin: bottom center;
+}
+.bar1{
+    animation-delay: 0.1s;
+    box-shadow: 0 0 5px 5px rgba(112, 9, 112, 0.550);
+}
+.bar2{
+    animation-delay: 0.2s;
+    box-shadow: 0 0 5px 5px rgb(112, 9, 112, 0.550);
+}
+.bar3{
+    animation-delay: 0.3s;
+    box-shadow: 0 0 5px 5px rgb(112, 9, 112, 0.550);
+}
+.bar4{
+    animation-delay: 0.4s;
+    box-shadow: 0 0 5px 5px rgb(112, 9, 112, 0.550);
+}
+.bar5{
+    animation-delay: 0.5s;
+    box-shadow: 0 0 5px 5px rgb(112, 9, 112, 0.550);
+}
+.bar6{
+    animation-delay: 0.6s;
+    box-shadow: 0 0 5px 5px rgb(112, 9, 112, 0.550);
+}
+.bar7{
+    animation-delay: 0.7s;
+    box-shadow: 0 0 5px 5px rgb(112, 9, 112, 0.550);
+}
+.bar8{
+    animation-delay: 0.8s;
+    box-shadow: 0 0 5px 5px rgb(112, 9, 112, 0.550);
+}
+
+@keyframes loading{
+    0%{
+      transform: scaleY(0.1);
+      background: #222;  
+    }
+    50%{
+        transform: scaleY(1);
+        background: rgb(166, 33, 228);
+    }
+    100%{
+        transform: scaleY(0.1);
+        background: transparent;
+    }
+}
