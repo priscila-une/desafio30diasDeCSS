@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#583d72,#9f5f80);
+
+}
+h1{
+    font-size: 200px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.animado{
+    background-image: url(kirby.webp);
+    background-size: auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2{
+    margin: 0;
+    font-size: 200px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.animado2{
+    background-image: url(pikachu.webp);
+    background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+h3{
+    margin: 0;
+    font-size: 200px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.animado3{
+    background-image: url(toad.webp);
+    background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
