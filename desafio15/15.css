@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+h1{
+    font-size: 100px;
+    font-family: fantasy;
+    color:seagreen;
+    animation: flutuar linear 5s infinite;
+}
+
+@keyframes flutuar{
+    0%{
+        transform: rotate(10deg);
+    }
+    25%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-10deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+}
