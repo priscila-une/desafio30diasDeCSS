@@ -1,0 +1,86 @@
+body{
+    background-color: darkslategray;
+    
+}
+
+.pacman{
+    position: relative;
+    margin-top: 250px;
+}
+
+.pacman div:nth-child(1){
+    width: 0;
+    height: 0;
+    border: 80px solid yellow;
+    border-right: 80px solid transparent;
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+    animation: rotate-up 0.5s infinite;
+}
+
+.pacman div:nth-child(2){
+    width: 0;
+    height: 0;
+    border: 80px solid yellow;
+    border-right: 80px solid transparent;
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+    animation: rotate-down 0.5s infinite;
+    margin-top: -160px;
+}
+.pacman div:nth-child(3),
+.pacman div:nth-child(4),
+.pacman div:nth-child(5){
+    background-color: rgb(255, 196, 0);
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 70px;
+    left: 65%;
+}
+
+.pacman div:nth-child(3){
+    animation: balls 1s -0.66s infinite linear;
+}
+.pacman div:nth-child(4){
+    animation: balls 1s -0.33s infinite linear;
+}
+.pacman div:nth-child(5){
+    animation: balls 1s 0s infinite linear;
+}
+
+@keyframes rotate-up{
+    0%{
+        transform: rotate(270deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(270deg);
+    }
+}
+
+@keyframes rotate-down{
+    0%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes balls{
+    75%{
+        opacity: 0.7;
+    }
+    100%{
+        transform: translate(-120px, 0);
+    }
+}
