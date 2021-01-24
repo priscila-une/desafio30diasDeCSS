@@ -1,0 +1,58 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif;
+}
+
+body 
+{
+    background: #b7eca1;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button 
+{
+    width: 200px;
+    height: 60px;
+    background: none;
+    border: 4px solid;
+    color: rgb(3, 0, 0);
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+}
+
+.button::before, .button::after
+{
+    content: "\1F49F";
+    position: absolute;
+    width: 14px;
+    height: 4px;
+    background: #b7eca1;
+
+    transition: .4s linear;
+}
+.button::before
+{
+    top: -10px;
+    left: 10%;
+}
+.button::after
+{
+    bottom: 2px;
+    right: 10%;
+}
+.button:hover::before
+{
+    left: 80%;
+}
+.button:hover::after
+{
+    right: 80%;
+}
