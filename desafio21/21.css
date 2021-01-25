@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    background: rgb(26, 1, 32);
+}
+.container{
+    
+    display:flex;
+    align-items: flex-end;
+    justify-content:space-evenly;
+    width: 500px;
+    height: 300px;
+    border-bottom: 2px solid rgba(141, 131, 131, 0.637);
+
+}
+
+.ball1, .ball2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: radial-gradient(blueviolet, violet );
+    animation: bounce 2s ease infinite;
+}
+
+.ball2{
+    animation-delay: 1s;
+}
+
+@keyframes bounce{
+    0%{transform:scale(1,1) translateY(0);}
+    5%{transform:scale(1.1,0.9) translateY(0);}
+    25%{transform: scale(0.9,1.1) translateY(-300px)}
+    50%{transform: scale(1.1,0.9) translateY(0)}
+    75%{transform: scale(0.9,1) translateY(-50px)}
+    90%{transform: scale(1,1) translateY(0)}
+    100%{transform: scale(1,1) translateY(0)}
+}
