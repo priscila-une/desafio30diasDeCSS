@@ -1,0 +1,29 @@
+body{
+  display:flex;
+  justify-content: center;
+  padding-top: 20%;
+  background-image: linear-gradient(to right, rgba(186, 127, 209, 0.582) , rgb(185, 16, 236));;
+}
+
+
+.botao{
+  display: inline-block;  
+  font-size: 40px;
+  text-align: center;
+  margin: 15px;
+  transition: 1.2s;
+}
+
+.botao span{
+  width: 80px;
+  height: 80px;
+  color: rgb(20, 20, 22);
+  background-color: rgb(245, 242, 238);
+  border-radius: 20px;
+  line-height: 70px;
+  box-shadow: 0 5px 15px -5px rgb(236, 16, 119);
+}
+
+.botao:hover{
+  transform: scale(1.2);
+}
