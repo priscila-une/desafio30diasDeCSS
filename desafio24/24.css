@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #111d5ec0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: Impact;
+}
+
+.loading{
+    width: 200px;
+    height: 200px;
+    box-sizing:border-box;
+    border-radius: 50%;
+    border-top: 10px solid #c70039;
+    position: relative;
+    animation: rotate1 2s linear infinite;
+}
+
+.loading::before, .loading::after{
+    content: "";
+    width: 200px;
+    height: 200px;
+    box-sizing:border-box;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: -10px;
+}
+
+.loading::before{
+    border-top: 10px solid #f37121;
+    transform: rotate(120deg);
+}
+.loading::after{
+    border-top: 10px solid #c0e218;
+    transform: rotate(240deg);
+}
+
+.loading span{
+    position:absolute;
+    width: 200px;
+    height: 200px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 200px;
+    animation: rotate2 2s linear infinite;
+}
+
+@keyframes rotate1 {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate2{
+    to{
+        transform:rotate(-360deg);
+    }
+}
