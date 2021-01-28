@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: center;
+    background-color:slategray;
+}
+
+.btn{
+    margin-top: 200px;
+    width: 300px;
+    height: 100px;
+    background-color:rgb(238, 104, 104);
+    border-radius: 10px;
+    opacity: 0.5;
+    font-size: 20px;
+    text-transform: uppercase;
+    color:honeydew;
+    border: 2px solid midnightblue;
+}
+
+.btn:hover{
+    opacity: 1;
+    box-shadow: 10px 1px #00080ed5,;
+    
+    
+}
