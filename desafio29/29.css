@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+nav{
+    
+    height: 80px;
+    background: midnightblue;
+    width: 100%;
+    display: flex; 
+}
+
+.logo{
+    color:white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 18px;
+    padding: 8px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    background: #1b9bff;
+    transition: .3s;
+}
+
+.checkbox{
+    height: 100px;
+    width: 100px;
+	line-height: 80px;
+	margin: 40px;
+    cursor: pointer;
+    display:none;
+    
+}
+
+.checkbox .trace{
+    width: 50px;
+    height: 8px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 4px;
+    transition: 3s ease-in-out;
+}
+.checkbox .trace:nth-child(1){
+    top:20px;
+    transform: rotate(0deg);
+}
+.checkbox .trace:nth-child(2){
+    top:30px;
+    transform: rotate(0deg);
+}
+.checkbox .trace:nth-child(3){
+    top:40px;
+    transform: rotate(0deg);
+}
+
+#toggle:checked + .checkbox .trace:nth-child(1){
+    transform: rotate(45deg);
+    top:27px;
+}
+#toggle:checked + .checkbox .trace:nth-child(2){
+    transform: translateX(-100px);
+    width: 30px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(3){
+    transform: rotate(-45deg);
+    top:28px;
+}
+
+#toggle{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .checkbox{
+        display: block;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        background: rgb(57, 57, 151);
+        transition: all .5s;
+    }
+
+    .logo{
+        float:right;
+    }
+
+    nav ul li{
+        display:block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+    
+    #toggle:checked ~ ul{
+        left: 0;
+    }
+
+}
+
+
+section{
+    background: url("https://images.pexels.com/photos/3879060/pexels-photo-3879060.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
